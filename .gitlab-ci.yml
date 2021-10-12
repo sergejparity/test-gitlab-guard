@@ -16,7 +16,7 @@ k8s-privileged:
   stage: build
   image: alpine
   script:
-    - echo 'Build stage'
+    - echo 'Build stage changed'
   tags:
     - testlab-k8s-privileged
 
