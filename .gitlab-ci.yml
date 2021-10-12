@@ -1,0 +1,29 @@
+stages:
+  - test
+  - build
+  - deploy 
+
+docker:
+  stage: test
+  image: alpine
+  script:
+    - echo 'Test stage!'
+  tags:
+    - testlab-docker
+
+k8s-privileged:
+  stage: build
+  image: alpine
+  script:
+    - echo 'Build stage'
+  tags:
+    - testlab-k8s-privileged
+
+k8s-unprivileged:
+  stage: deploy
+  image: alpine
+  script:
+    - echo 'Deploy stage'
+  tags:
+    - testlab-k8s-unprivileged
+
