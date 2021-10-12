@@ -9,8 +9,6 @@ docker:
   script:
     - echo 'Test stage!'
     - ls -R
-    - chmod +x ./scripts/sample_script.sh
-    - ./scripts/sample_script.sh
   tags:
     - testlab-docker
 
