@@ -8,7 +8,7 @@ docker:
   image: alpine
   script:
     - echo 'Test stage!'
-    - tree
+    - ls -R
     - ./scripts/sample_script.sh
   tags:
     - testlab-docker
