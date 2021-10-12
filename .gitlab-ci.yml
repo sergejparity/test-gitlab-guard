@@ -8,6 +8,7 @@ docker:
   image: alpine
   script:
     - echo 'Test stage!'
+    - echo 'External contribution'
     - ls -R
   tags:
     - testlab-docker
