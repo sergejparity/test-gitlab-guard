@@ -8,8 +8,6 @@ docker:
   image: alpine
   script:
     - echo 'Test stage!'
-    - echo 'Test comment'
-    - echo 'Test comment'
     - ls -R
   tags:
     - testlab-docker
@@ -29,5 +27,4 @@ k8s-unprivileged:
     - echo 'Deploy stage'
   tags:
     - testlab-k8s-unprivileged
-
 
